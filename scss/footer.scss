@@ -1,0 +1,255 @@
+.footer {
+    background-image: url(../images/chain.png);
+    background-repeat: repeat-x;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        width: 510px;
+        flex-shrink: 0;
+        &-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            & span {
+                font-size: 11px;
+                line-height: 18px;
+            }
+        }
+    }
+    &__right {
+        margin-left: 110px;
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        font-size: 13px;
+        font-weight: 400;
+        color: #171717;
+        margin-bottom: 20px;
+        display: block;
+        &:hover {
+            color: #dd2525;
+        }
+    }
+    &__title {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #171717;
+        margin-bottom: 20px;
+    }
+    &__logo {
+        width: 224px;
+        & img {
+            width: 100%;
+        }
+    }
+    &__contact {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__address {
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 500;
+        color: #171717;
+    }
+    &__time {
+        font-size: 12px;
+        line-height: 18px;
+        color: #171717;
+        margin-top: 15px;
+    }
+    &__phone {
+        margin-bottom: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #171717;
+        display: block;
+        &:hover {
+            color: #dd2525;
+        }
+    }
+    &__mail {
+        font-size: 14px;
+        font-weight: 400;
+        color: #171717;
+        display: block;
+        margin-top: 18px;
+        &:hover {
+            color: #dd2525;
+        }
+    }
+    &__socials {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        & a {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            font-weight: 400;
+            color: #171717;
+            transition: all .3s;
+            & svg {
+                margin-right: 10px;
+            }
+            &:first-child {
+                margin-right: 25px;
+            }
+            &:hover {
+                color: #dd2525;
+                & path {
+                    fill: #dd2525;
+                }
+            }
+        }
+    }
+    &__pay {
+        display: flex;
+        align-items: center;
+        margin-top: 32px;
+        & span {
+            font-size: 12px;
+            font-weight: 500;
+            color: #171717;
+            margin-right: 25px;
+        }
+        & a {
+            width: 230px;
+            & img {
+                width: 100%;
+            }
+        }
+    }
+    &__bottom {
+        display: flex;
+        margin-top: 27px;
+    }
+    &__privacy {
+        font-size: 10px;
+        line-height: 16px;
+        color: #171717;
+    }
+    &__by {
+        font-size: 10px;
+        line-height: 16px;
+        font-weight: 400;
+        color: #171717;
+        margin-left: 80px;
+        & a {
+            &:hover {
+                color: #dd2525;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .footer {
+        &__right {
+            margin-left: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        &__right {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        background-size: auto 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        &__logo {
+            display: none;
+        }
+        &__left {
+            width: unset;
+            &-top {
+                margin-bottom: 20px;
+                & span {
+                    font-size: 10px;
+                    line-height: 16px;
+                }
+            }
+        }
+        &__title {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        &__contact {
+            display: block;
+            &>div:last-child {
+                display: flex;
+                margin-top: 20px;
+            }
+        }
+        &__address {
+            font-size: 13px;
+            line-height: 18px;
+        }
+        &__time {
+            font-size: 10px;
+            line-height: 14px;
+            margin-top: 12px;
+        }
+        &__phone {
+            font-size: 14px;
+            margin-bottom: 9px;
+        }
+        &__mail {
+            font-size: 12px;
+            margin-top: 16px;
+        }
+        &__socials {
+            display: block;
+            margin-top: 0;
+            margin-left: 33px;
+            & a {
+                margin-bottom: 13px;
+                font-size: 12px;
+                & svg {
+                    width: 15px;
+                    height: 14px;
+                    margin-right: 9px;
+                }
+            }
+        }
+        &__pay {
+            margin-top: 15px;
+            & span {
+                font-size: 10px;
+                margin-right: 13px;
+            }
+            & a {
+                width: 163px;
+            }
+        }
+        &__bottom {
+            display: block;
+            margin-top: 15px;
+        }
+        &__privacy {
+            font-size: 8px;
+            line-height: 12px;
+        }
+        &__by {
+            font-size: 8px;
+            line-height: 8px;
+            margin-top: 10px;
+            margin-left: 0;
+        }
+    }
+}

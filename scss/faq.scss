@@ -1,0 +1,170 @@
+.faq {
+    margin-top: 30px;
+    padding-bottom: 60px;
+    &__inner {
+        border-top: 1px solid #e9e9e9;
+        padding-top: 30px;
+    }
+    &__top {
+        height: 112px;
+        background-color: #ffffff;
+        border: 1px solid #dd2525;
+        padding: 0 60px;
+        display: flex;
+        align-items: center;
+        & button {
+            width: 213px;
+            height: 47px;
+            margin-right: 48px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        &>span {
+            font-size: 14px;
+            line-height: 20px;
+            color: #212121;
+        }
+    }
+    &__items {
+        margin-top: 35px;
+        &-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #1b1b1b;
+            margin-bottom: 20px;
+        }
+    }
+    &__item {
+        // margin-bottom: -1px;
+        &:hover {
+            & span {
+                border-color: #dd2525;
+            }
+            & path {
+                fill: #dd2525;
+            }
+        }
+        &-show {
+            padding: 20px 40px;
+            border: 1px solid #e3e3e3;
+            font-size: 16px;
+            font-weight: 500;
+            color: #272727;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            & span {
+                border-bottom: 1px dashed #272727;
+            }
+            & svg {
+                width: 14px;
+                height: 8px;
+            }
+            &:hover {
+                border-color: #dd2525;
+            }
+        }
+        &-show--active {
+            background-color: #f7f7f7;
+            border-bottom: none;
+            & svg {
+                transform: rotate(180deg);
+            }
+            & span {
+                border-bottom: none;
+            }
+            &~.faq__item-hidden {
+                display: block;
+            }
+            &:hover {
+                border-color: #e3e3e3;
+            }
+        }
+        &-hidden {
+            padding: 0 40px 20px;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 500;
+            color: #272727;
+            display: none;
+            background-color: #f7f7f7;
+            padding-right: 120px;
+            border: 1px solid #e3e3e3;
+            border-top: none;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .faq {
+        &__top {
+            display: block;
+            padding: 22px 25px;
+            height: unset;
+            & span {
+                margin-top: 17px;
+                display: block;
+            }
+        }
+        &__item {
+            &-show {
+                & span {
+                    border-bottom: none;
+                    line-height: 20px;
+                }
+                & svg {
+                    align-self: start;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .faq {
+        margin-top: 13px;
+        padding-bottom: 40px;
+        &__inner {
+            padding-top: 20px;
+        }
+        &__top {
+            & button {
+                width: 176px;
+                height: 39px;
+            }
+            & span {
+                font-size: 12px;
+                line-height: 17px;
+                margin-top: 14px;
+            }
+        }
+        &__items {
+            margin-top: 20px;
+            &-title {
+                font-size: 18px;
+                margin-bottom: 14px;
+            }
+        }
+        &__item {
+            &-show {
+                padding: 12px 18px;
+                font-size: 14px;
+                line-height: 20px;
+                & svg {
+                    width: 8px;
+                    height: 4px;
+                    margin-left: 30px;
+                    flex-shrink: 0;
+                    margin-top: 9px;
+                }
+            }
+            &-hidden {
+                font-size: 12px;
+                line-height: 17px;
+                padding: 0 18px 12px;
+            }
+        }
+    }
+}

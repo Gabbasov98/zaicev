@@ -1,0 +1,191 @@
+.footer {
+  background-image: url(../images/chain.png);
+  background-repeat: repeat-x;
+  padding-top: 50px;
+  padding-bottom: 25px; }
+  .footer__inner {
+    display: flex;
+    justify-content: space-between; }
+  .footer__left {
+    width: 510px;
+    flex-shrink: 0; }
+    .footer__left-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 25px; }
+      .footer__left-top span {
+        font-size: 11px;
+        line-height: 18px; }
+  .footer__right {
+    margin-left: 110px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between; }
+  .footer__item {
+    font-size: 13px;
+    font-weight: 400;
+    color: #171717;
+    margin-bottom: 20px;
+    display: block; }
+    .footer__item:hover {
+      color: #dd2525; }
+  .footer__title {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #171717;
+    margin-bottom: 20px; }
+  .footer__logo {
+    width: 224px; }
+    .footer__logo img {
+      width: 100%; }
+  .footer__contact {
+    display: flex;
+    justify-content: space-between; }
+  .footer__address {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #171717; }
+  .footer__time {
+    font-size: 12px;
+    line-height: 18px;
+    color: #171717;
+    margin-top: 15px; }
+  .footer__phone {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #171717;
+    display: block; }
+    .footer__phone:hover {
+      color: #dd2525; }
+  .footer__mail {
+    font-size: 14px;
+    font-weight: 400;
+    color: #171717;
+    display: block;
+    margin-top: 18px; }
+    .footer__mail:hover {
+      color: #dd2525; }
+  .footer__socials {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; }
+    .footer__socials a {
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      font-weight: 400;
+      color: #171717;
+      transition: all .3s; }
+      .footer__socials a svg {
+        margin-right: 10px; }
+      .footer__socials a:first-child {
+        margin-right: 25px; }
+      .footer__socials a:hover {
+        color: #dd2525; }
+        .footer__socials a:hover path {
+          fill: #dd2525; }
+  .footer__pay {
+    display: flex;
+    align-items: center;
+    margin-top: 32px; }
+    .footer__pay span {
+      font-size: 12px;
+      font-weight: 500;
+      color: #171717;
+      margin-right: 25px; }
+    .footer__pay a {
+      width: 230px; }
+      .footer__pay a img {
+        width: 100%; }
+  .footer__bottom {
+    display: flex;
+    margin-top: 27px; }
+  .footer__privacy {
+    font-size: 10px;
+    line-height: 16px;
+    color: #171717; }
+  .footer__by {
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #171717;
+    margin-left: 80px; }
+    .footer__by a:hover {
+      color: #dd2525; }
+
+@media screen and (max-width: 1200px) {
+  .footer__right {
+    margin-left: 50px; } }
+@media screen and (max-width: 992px) {
+  .footer__right {
+    display: none; } }
+@media screen and (max-width: 768px) {
+  .footer {
+    background-size: auto 10px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .footer__logo {
+      display: none; }
+    .footer__left {
+      width: unset; }
+      .footer__left-top {
+        margin-bottom: 20px; }
+        .footer__left-top span {
+          font-size: 10px;
+          line-height: 16px; }
+    .footer__title {
+      font-size: 14px;
+      margin-bottom: 10px; }
+    .footer__contact {
+      display: block; }
+      .footer__contact > div:last-child {
+        display: flex;
+        margin-top: 20px; }
+    .footer__address {
+      font-size: 13px;
+      line-height: 18px; }
+    .footer__time {
+      font-size: 10px;
+      line-height: 14px;
+      margin-top: 12px; }
+    .footer__phone {
+      font-size: 14px;
+      margin-bottom: 9px; }
+    .footer__mail {
+      font-size: 12px;
+      margin-top: 16px; }
+    .footer__socials {
+      display: block;
+      margin-top: 0;
+      margin-left: 33px; }
+      .footer__socials a {
+        margin-bottom: 13px;
+        font-size: 12px; }
+        .footer__socials a svg {
+          width: 15px;
+          height: 14px;
+          margin-right: 9px; }
+    .footer__pay {
+      margin-top: 15px; }
+      .footer__pay span {
+        font-size: 10px;
+        margin-right: 13px; }
+      .footer__pay a {
+        width: 163px; }
+    .footer__bottom {
+      display: block;
+      margin-top: 15px; }
+    .footer__privacy {
+      font-size: 8px;
+      line-height: 12px; }
+    .footer__by {
+      font-size: 8px;
+      line-height: 8px;
+      margin-top: 10px;
+      margin-left: 0; } }
+
+/*# sourceMappingURL=footer.css.map */

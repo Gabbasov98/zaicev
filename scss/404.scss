@@ -1,0 +1,106 @@
+.error404 {
+    background-color: #f7f7f7;
+    padding-top: 85px;
+    padding-bottom: 95px;
+    position: relative;
+    &__inner {
+        display: flex;
+    }
+    &__left {
+        width: 314px;
+        margin-left: 140px;
+        & img {
+            width: 100%;
+        }
+    }
+    &__right {
+        margin-left: 48px;
+        position: relative;
+    }
+    &__title {
+        font-size: 36px;
+        line-height: 34px;
+        font-weight: 700;
+        color: #151515;
+        margin-top: 44px;
+    }
+    &__desc {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #1d1d1d;
+        margin-top: 18px;
+    }
+    &__desc2 {
+        margin-top: 31px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #1d1d1d;
+    }
+    &__link {
+        margin-top: 32px;
+        // & span {
+        //     // margin-right: 17px;
+        //     // margin-left: 0 !important;
+        //     color: #d7251c;
+        // }
+        // & svg {
+        //     transform: rotate(180deg);
+        // }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .error404 {
+        padding-top: 40px;
+        padding-bottom: 37px;
+        &__inner {
+            flex-wrap: wrap;
+            padding: 0 25px;
+        }
+        &__left {
+            width: 240px;
+            margin-left: 0;
+            // margin-right: auto;
+        }
+        &__title {
+            line-height: 120%;
+            margin-top: 30px;
+        }
+        &__right {
+            padding-left: 0;
+            margin-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .error404 {
+        &__title {
+            font-size: 22px;
+            line-height: 24px;
+            margin-top: 27px;
+        }
+        &__desc {
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 16px;
+        }
+        &__desc2 {
+            font-size: 12px;
+            line-height: 16px;
+            margin-top: 16px;
+        }
+        &__link {
+            margin-top: 23px;
+            & span {
+                margin-right: 13px !important;
+                font-size: 12px !important;
+            }
+            & svg {
+                margin-left: 0 !important;
+                margin-top: 2px;
+            }
+        }
+    }
+}
